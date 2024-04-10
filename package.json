@@ -1,6 +1,6 @@
 {
   "name": "react-formula-editor",
-  "version": "0.1.0-beta.0",
+  "version": "0.1.0-beta.1",
   "description": "A formula editor and formula component for React",
   "keywords": [
     "component",
@@ -44,5 +44,9 @@
     "antd": "^5",
     "antd-style": "^3",
     "react": "^18"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   }
 }
