@@ -1,0 +1,48 @@
+{
+  "name": "react-formula-editor",
+  "version": "0.1.0-beta.0",
+  "description": "A formula editor and formula component for React",
+  "keywords": [
+    "component",
+    "formula",
+    "editor",
+    "react"
+  ],
+  "homepage": "https://github.com/17hz/react-formula-editor",
+  "license": "MIT",
+  "author": "17hz",
+  "main": "es/index.js",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
+  "files": ["es"],
+  "scripts": {
+    "build": "father build",
+    "build:watch": "father dev",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": "biome format --write"
+  },
+
+  "dependencies": {
+    "codemirror": "5"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.6.4",
+    "@types/codemirror": "^5.60.15",
+    "@types/react": "^18.2.75",
+    "antd": "^5.16.1",
+    "antd-style": "^3.6.2",
+    "father": "^4.4.0",
+    "husky": "^9.0.11",
+    "init": "^0.1.2",
+    "lint-staged": "^15.2.2",
+    "react": "^18.2.0",
+    "typescript": "^5.4.4"
+  },
+  "peerDependencies": {
+    "antd": "^5",
+    "antd-style": "^3",
+    "react": "^18"
+  }
+}
