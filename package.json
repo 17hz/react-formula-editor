@@ -14,29 +14,35 @@
   "main": "es/index.js",
   "module": "es/index.js",
   "types": "es/index.d.ts",
-  "files": ["es"],
+  "files": [
+    "es"
+  ],
   "scripts": {
     "build": "father build",
     "build:watch": "father dev",
-    "prepare": "husky"
+    "prepare": "husky",
+    "format": "prettier --write --cache .",
+    "lint": "eslint --cache ."
   },
   "lint-staged": {
     "*.{ts,tsx}": "biome format --write"
   },
-
   "dependencies": {
-    "codemirror": "5"
+    "codemirror": "^5"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.6.4",
     "@types/codemirror": "^5.60.15",
     "@types/react": "^18.2.75",
+    "@typescript-eslint/eslint-plugin": "^7.6.0",
     "antd": "^5.16.1",
     "antd-style": "^3.6.2",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "father": "^4.4.0",
     "husky": "^9.0.11",
     "init": "^0.1.2",
     "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5",
     "react": "^18.2.0",
     "typescript": "^5.4.4"
   },
