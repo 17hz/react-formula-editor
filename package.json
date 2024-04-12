@@ -25,7 +25,7 @@
     "lint": "eslint --cache ."
   },
   "lint-staged": {
-    "*.{ts,tsx}": "biome format --write"
+    "*.{ts,tsx}": "prettier --write"
   },
   "dependencies": {
     "codemirror": "^5"
